@@ -1,0 +1,178 @@
+// mobile
+.container {
+    min-height: 100vh;
+    padding: 0 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--background);
+
+
+
+    .card{
+        display: flex;  
+        flex-direction: column;
+        //Imagem
+        .imagem{
+            width:100%;
+            height:9rem;
+            background-blend-mode: multiply ;
+            background: var(--violot_accent) url('/image_mobile.jpg');
+            background-size: cover;
+
+        } 
+        //Card de baixo
+        .botton_card{
+            background-color: var(--background_card);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            padding: 0 1rem;
+
+            // TExtos H3 3 P
+            .text{
+                color: var(--white);
+                
+                h3{
+                    font-size: 28px;
+                    b{
+                        color: var(--violot_accent);
+                    }
+                }
+
+                p{
+                    font-size: 13px;
+                }
+
+            }
+            // Infos abaixo dos textos
+            .information{
+                margin-top: 1rem;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+
+                color: var(--white);
+                text-transform: uppercase;
+                font-size: 15px;
+
+
+                .cards_infos{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: .1rem .5rem;
+                    margin-bottom: 1rem;
+
+                    span{
+                        font-weight: bold;
+                        font-size: 20px;
+                        margin-bottom: -.5rem;
+                    }
+                }            
+            }
+        }
+
+    }
+}
+// @media min-width: 576px
+@media (min-width: 576px) {
+    .container {
+        .card{
+            //Imagem
+            .imagem{
+                height:10rem;
+            } 
+            //Card de baixo
+            .botton_card{
+                // Infos abaixo dos textos
+                .information{
+                    margin-top: 2rem;
+                    display: flex;
+                    flex-direction: row;      
+                    
+                }
+            }
+        
+        }
+    }
+}
+// @media min-width: 768px
+@media (min-width: 768px) {
+    .container {
+        .card{
+            display: flex;
+            flex-direction: row-reverse;
+            min-height: 70vh;
+            min-width: 80%;
+            
+            //Imagem
+            .imagem{
+                width:100%;
+                height:70vh;
+                background-repeat: no-repeat;
+            } 
+            //Card de baixo
+            .botton_card{
+                display: flex;
+                justify-content: start;
+
+                padding: 0 1.5rem;
+        
+                
+                // TExtos H3 3 P
+                .text{                    
+                    h3{ font-size: 35px;
+                        b{
+                            color: var(--violot_accent);
+                        }
+                    }
+                    p { font-size: 18px;}
+        
+                }
+                // Infos abaixo dos textos
+                .information{
+                    margin-top: 4rem;    
+                               
+                }
+            }
+        
+        }
+    }
+}
+// @media min-width: 992px
+@media (min-width: 992px) {
+    .container { 
+        .card{            
+            //Card de baixo
+            .botton_card{
+                // Infos abaixo dos textos
+                .information{
+                    margin-top: 4.3rem;
+                }            
+            }
+        }
+        
+        
+    }
+}
+// @media min-width: 1035px
+@media (min-width: 1035px){
+    .container{
+        background-color: var(--background  );
+        .card{
+            .botton_card{
+                .information{
+                    margin-top: 5rem;
+                }
+            }
+        }
+    }
+}

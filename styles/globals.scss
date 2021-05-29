@@ -9,7 +9,6 @@
   --background_card: hsl(244, 38%, 16%);
 
 
-  font-family: 'Inter', 'Lexend Deca', sans-serif;
   font-size: 1rem;
 
 }
@@ -30,3 +29,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+h3,span{
+  font-family: 'Inter',sans-serif;
+}
+p{
+  font-family: 'Lexend Deca',sans-serif;
+}
+

@@ -1,10 +1,14 @@
-//import styles from '../styles/Home.module.css'
 import styles from '../styles/Card.module.scss'
+import Head from 'next/head'
 
 
 export default function Home() {
   return (
+    
     <main className={styles.container}>
+      <Head>
+        <title>Single Card</title>
+      </Head>
 
       <div className={styles.card}>
       

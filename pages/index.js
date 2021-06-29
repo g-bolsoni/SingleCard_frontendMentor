@@ -1,8 +1,17 @@
-import styles from '../styles/Card.module.scss'
-import Head from 'next/head'
+import styles from '../styles/Card.module.scss';
+import Head from 'next/head';
+import * as gtag from '../lib/gtag';
 
 
 export default function Home() {
+  const addToCart = () => {
+    gtag.event({ 
+      action: "add_to_cart",
+      category:"ecommerce",
+      label:"Item add",
+      value:"Playing cards"
+    });
+  }
   return (
     
     <main className={styles.container}>
@@ -10,6 +19,13 @@ export default function Home() {
         <title>Single Card</title>
       </Head>
 
+    <div className={styles.button_analytics}>
+        <button onClick={()=>{
+          addToCart()
+        }}>
+          Add to cart
+        </button>
+      </div>
       <div className={styles.card}>
       
           <section className={ styles.imagem }>
